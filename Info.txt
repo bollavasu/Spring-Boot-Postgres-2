@@ -1,0 +1,26 @@
+
+https://github.com/RameshMF/springboot-postgresql-hibernate-crud-example
+
+INSERT INTO employees (email_address, first_name, last_name) VALUES
+	('test1@test.com', 'Suresh', 'Kumar'),
+	('test2@test.com', 'Kiran', 'Kumar'),
+	('test3@test.com', 'Sharath', 'Kumar') 
+	
+http://localhost:8080/api/v1/employees     (GET)
+http://localhost:8080/api/v1/employees/3   (GET)
+
+http://localhost:8080/api/v1/employees     (POST)
+
+{
+  "emailId":"test5@test.com",
+  "firstName":"Prem",
+  "lastName":"Kumar"
+}
+
+http://localhost:8080/api/v1/employees/23   (PUT)
+
+{
+  "emailId":"test23@test.com",
+  "firstName":"Dhanush",
+  "lastName":"Kumar"
+}
